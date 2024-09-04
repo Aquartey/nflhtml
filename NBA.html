@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NBA Webpage</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: gray;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      header {
+        background-color: black;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      nav {
+        background-color: black;
+        padding: 15px;
+        text-align: center;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 1500px;
+        margin: 0 auto;
+        padding: 20px;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .hero {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .hero img {
+        max-width: 50%;
+        height: 300px;
+        border: 10px;
+      }
+
+      h1 {
+        color: white;
+        margin-bottom: 10px;
+      }
+
+      p {
+        color: whitesmoke;
+        line-height: 1.6;
+      }
+
+      .team-section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      .team-card {
+        background-color: black;
+        margin: 10px;
+        max-width: 400px;
+
+        height: 550px;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        color: white;
+      }
+
+      footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
+
+      .img10,
+      .img20,
+      .img30,
+      .img40 {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>NBA Fansite</h1>
+      <p>Your ultimate destination for NBA news and updates</p>
+    </header>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Teams</a>
+      <a href="#">Players</a>
+      <a href="#">Schedule</a>
+      <a href="#">Standings</a>
+    </nav>
+
+    <div class="container">
+      <div class="hero">
+        <img src="./img/nbaim1.png" alt="" />
+
+        <h1>Welcome to the NBA Fansite!</h1>
+        <p>
+          Catch the latest action, scores, and highlights from the best
+          basketball league in the world.
+        </p>
+      </div>
+
+      <section class="team-section">
+        <div class="team-card">
+          <img src="./img/goldenst.webp" alt="" class="img10" />
+          <h3>Team Name 1</h3>
+          <p>Conference: Western</p>
+          <p>Top Player: Player 1</p>
+        </div>
+
+        <div class="team-card">
+          <img src="./img/phoe.png" alt="" class="img20" />
+          <h3>Team Name 2</h3>
+          <p>Conference: Western</p>
+          <p>Top Player: Player 2</p>
+        </div>
+
+        <div class="team-card">
+          <img src="./img/celt.jpg" alt="" class="img30" />
+          <h3>Team Name 3</h3>
+          <p>Conference: Eastern</p>
+          <p>Top Player: Player 3</p>
+        </div>
+
+        <div class="team-card">
+          <img src="./img/lkrs.jpg" alt="" class="img40" />
+          <h3>Team Name 4</h3>
+          <p>Conference: Western</p>
+          <p>Top Player: Player 4</p>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 NBA Fansite. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

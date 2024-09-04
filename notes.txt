@@ -1,0 +1,6 @@
+selecting elements in css by class names we use dot(.) followed by the name of the class.
+star(*) selects every element in the file.
+
+
+selecting an html tag in css by the tag name selets every occurence of that tag. example (p{} this syntax selects every paragraph)
+mdn docs.web

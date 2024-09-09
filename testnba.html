@@ -1,23 +1,177 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NBA Webpage</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(197, 187, 167);
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
 
-<h1 style="font-size:60px;"> Home of the NBA</h1.
+      header {
+        background-color: black;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
 
-</body>
+      nav {
+        background-color: black;
+        padding: 15px;
+        text-align: center;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 1500px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-aroun;
+      }
+
+      .hero {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .hero img {
+        max-width: 50%;
+        height: 300px;
+        border: 10px;
+      }
+
+      h1 {
+        color: brown;
+        margin-bottom: 10px;
+      }
+
+      p {
+        line-height: 1.6;
+      }
+
+      .team-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 500px;
+      }
+
+      .team-card {
+        background-color: white;
+        max-width: 100%;
+        height: 200px;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .team-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+
+      footer {
+        color: black;
+        text-align: center;
+        padding: 15px;
+        position: relative;
+        bottom: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>NBA Fansite</h1>
+      <p>Your ultimate destination for NBA news and updates</p>
+    </header>
+
+    <nav>
+      <a href="https://www.nba.com" target="_blank">Home</a>
+      <a href="https://www.nba.com/teams" target="_blank">Teams</a>
+      <a href="https://www.nba.com/schedule" target="_blank">Schedule</a>
+      <a href="https://www.nba.com/standings" target="_blank">Standings</a>
+    </nav>
+
+    <div class="container">
+      <div class="hero">
+        <img src="./img/nbaim1.png" alt="" />
+        <h1>Welcome to the NBA Fansite!</h1>
+        <p>
+          Catch the latest action, scores, and highlights from the best
+          basketball league in the world.
+        </p>
+      </div>
+
+      <section class="team-section">
+        <div class="team-card">
+          <img src="./img/goldenst.webp" alt="" class="img10" />
+        </div>
+
+        <div class="team-card">
+          <img src="./img/phoe.png" alt="" class="img20" />
+        </div>
+
+        <div class="team-card">
+          <img src="./img/celt.jpg" alt="" class="img30" />
+        </div>
+
+        <div class="team-card">
+          <img src="./img/lkrs.jpg" alt="" class="img40" />
+        </div>
+
+        <div class="team-card">
+          <img src="./img/clip.png" alt="" class="img50" />
+        </div>
+
+        <div class="team-card">
+          <img src="./img/dals.png" alt="" class="img60" />
+        </div>
+
+        <div class="team-card">
+          <img src="./img/76ers.png" alt="" class="img70" />
+        </div>
+
+        <div class="team-card">
+          <img src="./img/bulls.webp" alt="" class="img80" />
+        </div>
+
+        <div class="team-card">
+          <img src="./img/cav.png" alt="" class="img90" />
+        </div>
+
+        <div class="team-card">
+          <img src="./img/net.png" alt="" class="img1" />
+        </div>
+      </section>
+    </div>
+    <footer>
+      <p>&copy; 2024 NBA Fansite. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-    body {
-  background-image: url('depositphotos_64959281-stock-photo-the-balls-on-a-wooden.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;  
-  background-size: cover;
-}
-</style>
-</head>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teams Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: whitesmoke;
+        text-align: center;
+      }
+      header {
+        background-color: black;
+        color: white;
+        padding: 20px;
+      }
+      nav {
+        background-color: black;
+        padding: 15px;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+      }
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      /* Grid for team cards */
+      .team-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+        gap: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 800px; /* Adjust the max width */
+        margin: 0 auto; /* Center the grid */
+      }
+
+      .team-card {
+        background-color: white;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .team-card img {
+        width: 100%;
+        height: 150px; /* Fixed height for uniformity */
+        object-fit: cover;
+        border-radius: 5px;
+      }
+
+      .team-card p {
+        margin-top: 10px;
+        font-size: 14px;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>NBA Teams</h1>
+    </header>
+
+    <nav>
+      <a href="NBA.html">Home</a>
+      <a href="teams.html">Teams</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="standings.html">Standings</a>
+    </nav>
+
+    <h2>List of NBA Teams</h2>
+
+    <!-- Grid Section for Teams -->
+    <section class="team-section">
+      <div class="team-card">
+        <img src="./img/goldenst.webp" alt="Golden State Warriors" />
+        <p>Golden State Warriors</p>
+      </div>
+
+      <div class="team-card">
+        <img src="./img/phoe.png" alt="Phoenix Suns" />
+        <p>Phoenix Suns</p>
+      </div>
+
+      <div class="team-card">
+        <img src="./img/celt.jpg" alt="Boston Celtics" />
+        <p>Boston Celtics</p>
+      </div>
+
+      <div class="team-card">
+        <img src="./img/lkrs.jpg" alt="Los Angeles Lakers" />
+        <p>Los Angeles Lakers</p>
+      </div>
+
+      <div class="team-card">
+        <img src="./img/clip.png" alt="LA Clippers" />
+        <p>LA Clippers</p>
+      </div>
+
+      <div class="team-card">
+        <img src="./img/dals.png" alt="Dallas Mavericks" />
+        <p>Dallas Mavericks</p>
+      </div>
+
+      <div class="team-card">
+        <img src="./img/76ers.png" alt="Philadelphia 76ers" />
+        <p>Philadelphia 76ers</p>
+      </div>
+
+      <div class="team-card">
+        <img src="./img/bulls.webp" alt="Chicago Bulls" />
+        <p>Chicago Bulls</p>
+      </div>
+
+      <div class="team-card">
+        <img src="./img/cav.png" alt="Cleveland Cavaliers" />
+        <p>Cleveland Cavaliers</p>
+      </div>
+
+      <div class="team-card">
+        <img src="./img/net.png" alt="Brooklyn Nets" />
+        <p>Brooklyn Nets</p>
+      </div>
+    </section>
+  </body>
+</html>
